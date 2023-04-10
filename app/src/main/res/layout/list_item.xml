@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:id="@+id/root_layout"
+	android:background="#FF444654"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:paddingStart="16dp"
+		android:paddingEnd="16dp"
+		android:paddingTop="16dp"
+		android:paddingBottom="12dp">
+
+		<ImageView
+			android:src="@drawable/chatgpt_icon"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_marginRight="8dp"
+			android:id="@+id/icon"
+			android:layout_gravity="top"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/message"
+			android:textColor="#FFD1D5DB"
+			android:textSize="16sp"
+			android:lineSpacingExtra="8dp"
+			android:text="Message"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingStart="16dp"
+		android:paddingEnd="16dp"
+		android:gravity="right|center_vertical"
+		android:paddingBottom="8dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="8:40pm"
+			android:layout_marginEnd="8dp"
+			android:textColor="#FFD1D5DB"
+			android:textSize="12sp"
+			android:gravity="center"
+			android:id="@+id/time"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="16s"
+			android:layout_marginEnd="8dp"
+			android:textColor="#FFD1D5DB"
+			android:textSize="12sp"
+			android:gravity="center"
+			android:id="@+id/response_time"/>
+
+		<ImageView
+			android:src="@drawable/ic_copy"
+			android:layout_width="14dp"
+			android:layout_height="14dp"
+			android:scaleType="fitCenter"
+			android:tint="#FFD1D5DB"
+			android:id="@+id/copy"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

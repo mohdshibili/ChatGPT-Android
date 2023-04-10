@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="56dp"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:background="#FF343541">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="ChatGPT"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textColor="#FFFFFFFF"
+		android:textStyle="bold|normal"
+		android:textSize="20sp"
+		android:layout_marginTop="5dp"
+		android:id="@+id/title"/>
+
+	<LinearLayout
+		android:id="@+id/subtitle_container"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="5dp"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:visibility="gone">
+
+		<TextView
+			android:id="@+id/subtitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="online"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#FFD0D0D1" />
+
+		<com.airbnb.lottie.LottieAnimationView
+			android:id="@+id/typing_indicator"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_marginTop="3dp"
+			android:scaleType="fitCenter"
+			android:visibility="gone"
+			app:lottie_autoPlay="true"
+			app:lottie_fileName="typing_indicator.json"
+			app:lottie_loop="true"
+			tools:visibility="visible" />
+
+	</LinearLayout>
+
+</LinearLayout>
+
